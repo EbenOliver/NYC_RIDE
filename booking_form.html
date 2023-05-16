@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NYC RIDE</title>
+    <link rel="icon" href="images/carfav.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="/css/booking.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+</head>
+
+<body style="background-image: url('/images/bg_form.jpg'); width: 100%; height: 100vh; object-fit:cover;">
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">Travel TRI STATE with a luxurious car</h1>
+            <p id="description" class="text-center">
+                Start planning your trip today !
+            </p>
+        </header>
+        <div class="form-wrap">
+            <form id="survey-form">
+                <label1> RIDE INFORMATION </label1>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label  id="service-label" for="service">Select service<span style="color:red;">*</span></label>
+                            <select name="service" id="service" class="form-control boo_form" value="Select our Service" required>
+                                <option value="">--Select One Service--</option>
+                                <option value="Airport Transfers">Airport Transfers</option>
+                                <option value="City Tour">City Tour/option>
+                                <option value="Interstate Transfers">Interstate Transfers</option>
+                                <option value="Hourly Service">Hourly Service</option>
+                                <option value="NYC Point to Point">NYC Point to Point</option>
+                                <option value="Group Ride">Group Ride</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label id="date-label" for="date">Pick-up date<span style="color:red;">*</span></label>
+                            <input type="date" name="age" id="date" min="10" max="99" class="form-control"
+                                placeholder="date"  required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Pick-up time</label>
+                            <input type="time" name="time" id="number" min="10" max="99" class="form-control"
+                                placeholder="time">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label id="pickup-label" for="pickup">Pick-up location<span style="color:red;">*</span></label>
+                            <input type="location" name="pickup" id="pickup" min="10" max="99" class="form-control"
+                                placeholder="Enter location"  required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label  id="drop-label" for="drop">Drop off location<span style="color:red;">*</span></label>
+                            <input type="location" name="drop" id="drop" min="10" max="99" class="form-control"
+                                placeholder="Enter location" required>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label  id="diff-label" for="diff-loc">Drop in different location</label>
+                            <textarea class="form-control " id="diff-loc" rows="5"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label  id="vehicle-label" for="vehicle">Select vehicle<span style="color:red;">*</span></label>
+                            <select name="vehicle" id="vehicle" class="form-control boo_form" value="Select ABC" required>
+                                <option value="">--Select Vehicles--</option>
+                                <option value="Mercedes-Benz Sprinter">Mercedes-Benz Sprinter</option>
+                                <option value="Chevy Suburban">Chevy Suburban</option>
+                                <option value="Lincoln Navigator">Lincoln Navigator</option>
+                                <option value="Cadillac CT5">Cadillac CT5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <label1> Passenger Details </label1>
+                <hr>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label  id="vehicle-label" for="vehicle">no: of Passenger</label>
+                            <span class="input-number-decrement">–</span>
+                            <input id="input-number" class="input-number" type="text" value="1" min="0" max="20">
+                            <span class="input-number-increment">+</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label  id="vehicle-label" for="vehicle">no: of Luggage</label>
+                            <span class="input-number-decrement">–</span>
+                            <input id="input-number1" class="input-number" type="text" value="0" min="0" max="20">
+                            <span class="input-number-increment">+</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label  id="vehicle-label" for="vehicle">no: of Hours</label>
+                            <span class="input-number-decrement">–</span>
+                            <input id="input-number2" class="input-number" type="text" value="1" min="0" max="">
+                            <span class="input-number-increment">+</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label id="name-label" for="name">Full Name<span style="color:red;">*</span></label>
+                            <input type="text" name="name" id="name" min="10" max="99" class="form-control"
+                                placeholder="Name" required>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="mobile-group">
+                            <label id="date-label" for="mobile">Mobile Number<span style="color:red;">*</span></label>
+                            <input type="text" name="mobile" id="mobile" min="10" max="99" class="form-control"
+                                placeholder="Mobile Number" required>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label id="email-label" for="email">E-mail</label>
+                            <input type="text" name="email" id="email" min="10" max="99" class="form-control"
+                                placeholder="E-mail" required>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label>Leave Message</label>
+                            <textarea id="comments" class="form-control" name="comment"
+                                placeholder="Enter your comment here..."></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <!-- <button type="submit" id="submit" class="btn btn-primary btn-block">Submit Survey</button> -->
+                    </div>
+
+                    <div class="col-md-4">
+                        <button type="submit" id="submit" class="btn btn-primary btn-block">Book Now</button>
+                    </div>
+
+                    <div class="col-md-4">
+                        <!-- <button type="submit" id="submit" class="btn btn-primary btn-block">Submit Survey</button> -->
+                    </div>
+                </div>
+
+            </form>
+            <div class="row mt-3">
+                <div class="col-md-4">
+                    
+                </div>
+
+                <div class="col-md-4">
+                    <a class="tag-Color" href="/index.html"><button type="submit" id="cancel" class="btn btn-danger btn-block">BACK</button></a>
+                </div>
+
+                <div class="col-md-4">
+                    <!-- <button type="submit" id="submit" class="btn btn-primary btn-block">Submit Survey</button> -->
+                </div>
+            </div>
+            <p class="mt-5" style="font-size:14px; text-decoration:none;"><span style="color:red; font-size:20px;">*</span> Mandatory fields must be filled.</p>
+        </div>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>
+        (function() {
+            window.inputNumber = function(el) {
+ 
+            
+                var min = el.attr('min') || false;
+                var max = el.attr('max') || false;
+
+                var els = {};
+
+                els.dec = el.prev();
+                els.inc = el.next();
+
+                el.each(function() {
+                init($(this));
+                });
+
+                function init(el) {
+
+                    els.dec.on('click', decrement);
+                    els.inc.on('click', increment);
+
+                    function decrement() {
+                        var value = el[0].value;
+                        value--;
+                        if(!min || value >= min) {
+                        el[0].value = value;
+                        }
+                    }
+
+                    function increment() {
+                        var value = el[0].value;
+                        value++;
+                        if(!max || value <= max) {
+                        el[0].value = value++;
+                        }
+                    }
+                }
+            }
+        })();
+
+        inputNumber($('#input-number'));
+        inputNumber($('#input-number1'));
+        inputNumber($('#input-number2'));
+    </script>
+
+
+
+
+</body>
+
+</html>
